@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rachel Rodgers — The Million Dollar Room</title>
+<meta name="description" content="The room for women founders who plan to cross seven figures. Hello Seven Mastermind applications are open.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--bg:#140a1a;--bg-2:#1c0f24;--surface:#251430;--line:rgba(240,199,142,.12);
+--text:#faf3e6;--muted:#b9a79a;--gold:#f0c78e;--gold-2:#d9a45f;--plum:#6b2e5e;--plum-2:#a64686;--cream:#f5e8d4;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.65;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(240,199,142,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(240,199,142,.022) 1px,transparent 1px);background-size:42px 42px;pointer-events:none;z-index:0}
+body::after{content:'';position:fixed;top:-25%;left:40%;transform:translateX(-50%);width:80%;height:70%;background:radial-gradient(circle,rgba(166,70,134,.12) 0%,transparent 60%);pointer-events:none;z-index:0}
+.container{max-width:1180px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+nav{padding:28px 0;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(20,10,26,.92);backdrop-filter:blur(14px);z-index:100}
+.nav-inner{display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;font-size:22px;letter-spacing:-.03em;color:var(--cream)}
+.logo span{background:linear-gradient(135deg,var(--gold) 0%,var(--plum-2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-cta{padding:10px 22px;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-2) 100%);color:#1c0f24;border-radius:8px;text-decoration:none;font-weight:700;font-size:14px}
+section{padding:100px 0;position:relative}
+.eyebrow{display:inline-block;padding:6px 14px;background:rgba(240,199,142,.08);border:1px solid rgba(240,199,142,.3);border-radius:20px;font-size:12px;font-weight:600;color:var(--gold);letter-spacing:.18em;text-transform:uppercase;margin-bottom:24px}
+h1{font-size:clamp(42px,6vw,76px);font-weight:800;line-height:1.05;letter-spacing:-.03em;margin-bottom:24px}
+h1 em{font-style:normal;background:linear-gradient(135deg,var(--gold) 0%,var(--plum-2) 60%,var(--gold-2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+h2{font-size:clamp(32px,4vw,48px);font-weight:700;line-height:1.15;letter-spacing:-.02em;margin-bottom:20px}
+h3{font-size:22px;font-weight:700;margin-bottom:14px;color:var(--cream)}
+p{color:var(--muted);font-size:17px;max-width:680px}
+.hero{padding-top:80px;text-align:center}
+.hero p{font-size:20px;margin:0 auto 40px;max-width:720px}
+.cta-primary{display:inline-block;padding:18px 38px;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-2) 100%);color:#1c0f24;text-decoration:none;border-radius:12px;font-weight:700;font-size:16px;box-shadow:0 14px 42px rgba(240,199,142,.22);transition:.2s}
+.cta-primary:hover{transform:translateY(-2px)}
+.vsl-box{max-width:900px;margin:60px auto;aspect-ratio:16/9;background:linear-gradient(135deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:16px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.vsl-box::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at center,rgba(166,70,134,.12) 0%,transparent 60%)}
+.play-btn{width:88px;height:88px;border-radius:50%;background:rgba(240,199,142,.12);border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;z-index:1}
+.play-btn svg{width:32px;height:32px;fill:var(--gold);margin-left:4px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin:80px 0 0;padding:40px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat-num{font-size:40px;font-weight:800;background:linear-gradient(135deg,var(--gold) 0%,var(--plum-2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.03em}
+.stat-label{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-top:6px}
+.problem-grid,.pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:50px}
+.card{padding:36px;background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:16px;transition:.3s}
+.card:hover{border-color:rgba(240,199,142,.4);transform:translateY(-4px)}
+.card-num{font-size:13px;color:var(--gold);font-weight:700;letter-spacing:.18em;text-transform:uppercase;margin-bottom:16px}
+.card p{font-size:15px}
+.divider{height:1px;background:linear-gradient(90deg,transparent 0%,var(--line) 50%,transparent 100%)}
+.lead-capture{background:linear-gradient(135deg,rgba(166,70,134,.12) 0%,rgba(240,199,142,.05) 100%);border:1px solid rgba(240,199,142,.22);border-radius:24px;padding:70px 60px;text-align:center;margin:80px 0}
+.lead-capture h2{max-width:640px;margin:0 auto 20px}
+.form-row{display:flex;gap:12px;max-width:520px;margin:36px auto 0}
+.form-row input{flex:1;padding:18px 22px;background:var(--bg);border:1px solid var(--line);border-radius:12px;color:var(--text);font-size:15px;font-family:inherit}
+.form-row input:focus{outline:none;border-color:var(--gold)}
+.form-row button{padding:18px 32px;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-2) 100%);color:#1c0f24;border:none;border-radius:12px;font-weight:700;font-size:15px;cursor:pointer;font-family:inherit}
+.offer-box{background:linear-gradient(135deg,#1f0f28 0%,#2a1438 100%);border:1px solid rgba(240,199,142,.22);border-radius:24px;padding:60px;margin-top:40px}
+.offer-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:center}
+.offer-price{font-size:46px;font-weight:800;background:linear-gradient(135deg,var(--gold) 0%,var(--plum-2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.03em;line-height:1.1}
+.offer-price small{font-size:18px;color:var(--muted);font-weight:500;-webkit-text-fill-color:var(--muted);display:block;margin-top:8px}
+.feature-list{list-style:none;margin-top:24px}
+.feature-list li{padding:12px 0;color:var(--text);display:flex;align-items:flex-start;gap:12px;font-size:15px}
+.feature-list li::before{content:'✓';color:var(--gold);font-weight:700;flex-shrink:0}
+.proof-row{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:50px}
+.proof-card{padding:28px;background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:14px}
+.proof-card h4{color:var(--cream);font-size:16px;font-weight:700;margin-bottom:10px}
+.proof-card p{font-size:14px;color:var(--muted);margin-bottom:12px}
+.proof-card .stat{font-size:24px;font-weight:800;background:linear-gradient(135deg,var(--gold) 0%,var(--plum-2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.bio{display:grid;grid-template-columns:1fr 1.5fr;gap:60px;align-items:center}
+.bio-img{aspect-ratio:4/5;background:linear-gradient(135deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:20px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px;text-align:center;padding:20px}
+.faq-item{border-bottom:1px solid var(--line);padding:24px 0;cursor:pointer}
+.faq-q{display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:18px;color:var(--cream)}
+.faq-plus{width:24px;height:24px;position:relative;flex-shrink:0}
+.faq-plus::before,.faq-plus::after{content:'';position:absolute;background:var(--gold);top:50%;left:50%;transition:.3s}
+.faq-plus::before{width:14px;height:2px;transform:translate(-50%,-50%)}
+.faq-plus::after{width:2px;height:14px;transform:translate(-50%,-50%)}
+.faq-item.open .faq-plus::after{transform:translate(-50%,-50%) rotate(90deg);opacity:0}
+.faq-a{max-height:0;overflow:hidden;transition:.3s}
+.faq-item.open .faq-a{max-height:320px;padding-top:14px}
+.footer{padding:60px 0;border-top:1px solid var(--line);text-align:center}
+.footer p{margin:0 auto;font-size:14px}
+@media(max-width:768px){
+.problem-grid,.pillar-grid,.stats,.proof-row{grid-template-columns:1fr}
+.offer-grid,.bio{grid-template-columns:1fr}
+.lead-capture,.offer-box{padding:40px 24px}
+.form-row{flex-direction:column}
+section{padding:70px 0}
+.stats{gap:20px}
+}
+.reveal{opacity:0;transform:translateY(30px);transition:.8s}
+.reveal.in{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+<nav>
+<div class="container nav-inner">
+<div class="logo">RACHEL <span>RODGERS</span></div>
+<a href="#apply" class="nav-cta">Apply Now</a>
+</div>
+</nav>
+
+<section class="hero">
+<div class="container">
+<div class="eyebrow reveal">HELLO SEVEN MASTERMIND</div>
+<h1 class="reveal">The Room For Women Who <em>Plan</em> To Be Millionaires</h1>
+<p class="reveal">Not hope. Plan. The Hello Seven Mastermind is the room for women founders already running $150K-$2M businesses who are ready to cross seven figures with the right architecture, the right operating system, and the right peers.</p>
+<div class="vsl-box reveal">
+<div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+</div>
+<a href="#apply" class="cta-primary reveal">Apply For The Mastermind →</a>
+<div class="stats reveal">
+<div><div class="stat-num">8-Figure</div><div class="stat-label">Operator</div></div>
+<div><div class="stat-num">201K</div><div class="stat-label">IG Community</div></div>
+<div><div class="stat-num">#1 Bestseller</div><div class="stat-label">WSABM Book</div></div>
+<div><div class="stat-num">7+ Years</div><div class="stat-label">Hello Seven</div></div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container">
+<div class="eyebrow reveal">THE CEILING</div>
+<h2 class="reveal">The Ceiling Between Six And Seven<br>Is Architectural, Not Motivational</h2>
+<p class="reveal" style="font-size:18px">The reason most women founders stall between $250K and $500K is not mindset. It's the four decisions they haven't made yet. Here are the three that stall founders the longest.</p>
+<div class="problem-grid">
+<div class="card reveal"><div class="card-num">CEILING 01</div><h3>Pricing Still Set By Feel</h3><p>Revenue-per-hour under $300 means your offer is underpriced, your scope is too wide, or both. That's a pricing decision, not a confidence one.</p></div>
+<div class="card reveal"><div class="card-num">CEILING 02</div><h3>Founder Is The Delivery Engine</h3><p>Every deliverable, every call, every decision still routes through you. At $500K, that model runs out of hours. The business needs a real team, not another contractor.</p></div>
+<div class="card reveal"><div class="card-num">CEILING 03</div><h3>One Offer, No Ladder</h3><p>One offer is a business. Three offers is an ecosystem. Without a front-end, a core, and a high-ticket, most of the value of your audience walks past uncaptured.</p></div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container">
+<div class="eyebrow reveal">THE FRAMEWORK</div>
+<h2 class="reveal">The Million Dollar Architecture,<br>Built On Three Pillars</h2>
+<div class="pillar-grid">
+<div class="card reveal"><div class="card-num">PILLAR 1</div><h3>Pricing + Offer Structure</h3><p>The Hello Seven pricing math, applied to your business. Custom, productised, systemised. Every woman founder in the room is running this framework on her offers, with the team to back it up.</p></div>
+<div class="card reveal"><div class="card-num">PILLAR 2</div><h3>Operating System</h3><p>The Hello Seven OS. Playbooks, scripts, templates, hiring frameworks, monthly workshops on Messaging, Systems, AI. This is the architecture that carries you through seven and into eight.</p></div>
+<div class="card reveal"><div class="card-num">PILLAR 3</div><h3>The Room</h3><p>Founders already operating at $250K-$2M. Three annual retreats. Weekly planning. Brain Trust specialists. 1:1 coaching with certified coaches. The room is the whole game.</p></div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container">
+<div class="eyebrow reveal">PROOF</div>
+<h2 class="reveal">Women Who Made The Decisions</h2>
+<p class="reveal">Publicly documented case studies from the Hello Seven ecosystem. Real numbers, real businesses.</p>
+<div class="proof-row">
+<div class="proof-card reveal">
+<div class="stat">$75K → Double</div>
+<h4>Ten Months</h4>
+<p>Heidi came into the room at $75K annual. Ten months later, her number doubled. Same business, new architecture, new pricing, cleaner scope.</p>
+</div>
+<div class="proof-card reveal">
+<div class="stat">$500K → $1.2M</div>
+<h4>Under One Year</h4>
+<p>Leanne crossed seven figures in under twelve months after joining the Mastermind. The move was structural. Offer ladder, team, pricing.</p>
+</div>
+<div class="proof-card reveal">
+<div class="stat">$2K/year → $400K</div>
+<h4>Side Hustle To Serious</h4>
+<p>Dr. Tiffany Martinez built from a $6K-$20K side business into a $400K operation with $50K months. The system scales when the decisions get made.</p>
+</div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container">
+<div class="lead-capture reveal">
+<div class="eyebrow">FREE TRAINING</div>
+<h2>The Million Dollar Math Most Women Are Never Taught</h2>
+<p style="margin:0 auto">Two-part training on the pricing math, the offer ladder, and the four decisions that break the ceiling from six figures to seven. Free. No upsell wall.</p>
+<form class="form-row" onsubmit="event.preventDefault();alert('Check your inbox. Training sent.')">
+<input type="email" placeholder="Enter your email" required>
+<button type="submit">Get Access →</button>
+</form>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section id="apply">
+<div class="container">
+<div class="eyebrow reveal">THE PROGRAM</div>
+<h2 class="reveal">The Hello Seven Mastermind</h2>
+<div class="offer-box reveal">
+<div class="offer-grid">
+<div>
+<div class="offer-price">Application Only<small>Investment discussed on the qualification call. Financing available for accepted applicants.</small></div>
+<p style="margin-top:20px">The room for women founders already running $150K-$2M businesses who are ready to cross seven figures. Not a course. Not a coaching program in the usual sense. A curated room of operators, with the operating system, the retreats, and the 1:1 support to back it up.</p>
+<ul class="feature-list">
+<li>Growth Scale Curriculum, tiered by revenue level</li>
+<li>The Hello Seven Operating System (playbooks, scripts, templates)</li>
+<li>Monthly workshops: Messaging, Systems, AI</li>
+<li>Weekly planning and quarterly strategy sessions</li>
+<li>Three in-person retreats per year (Spring, Summer, Fall)</li>
+<li>1:1 coaching with Hello Seven certified coaches</li>
+<li>Brain Trust specialists: marketing, systems, AI, design, mindset</li>
+<li>Qualification call before acceptance</li>
+</ul>
+</div>
+<div>
+<div style="background:rgba(240,199,142,.06);border:1px solid rgba(240,199,142,.2);border-radius:16px;padding:32px;text-align:center">
+<div class="eyebrow">NEXT STEP</div>
+<h3 style="margin-bottom:12px">Apply In Under 10 Minutes</h3>
+<p style="margin:0 auto 24px">Our team reviews every application within 48 hours. If it's a fit, we book the qualification call. If it isn't, we tell you honestly.</p>
+<a href="#" class="cta-primary" style="width:100%">Start Application →</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container">
+<div class="bio">
+<div class="bio-img reveal">[Rachel Rodgers headshot]</div>
+<div class="reveal">
+<div class="eyebrow">ABOUT RACHEL</div>
+<h2>Former Attorney. Eight-Figure Founder. Author.</h2>
+<p style="font-size:17px;margin-top:20px">Rachel Rodgers founded Hello Seven after spending years as an attorney, noticing the same pattern across every woman client she worked with: brilliant operators, underpricing their work, stalled on decisions that would change the number overnight.</p>
+<p style="margin-top:16px">Hello Seven is the company she built to fix that. The bestselling book, *We Should All Be Millionaires*, is the playbook. The Mastermind is the room where the playbook gets installed. Today Hello Seven is an eight-figure operation and the standard for women-led wealth education.</p>
+</div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container" style="max-width:820px">
+<div class="eyebrow reveal">FAQ</div>
+<h2 class="reveal">Common Questions</h2>
+<div style="margin-top:40px">
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>Who is the Mastermind actually for?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>Women founders already running $150K to $2M annual businesses who want to cross seven figures with the right architecture. Coaches, consultants, service founders, boutique agency owners. Not for pre-revenue founders or side-hustlers. The room is built for operators.</p></div>
+</div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>What's the investment?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>Discussed on the qualification call. The program is a premium commitment in line with the room it places you in. Financing is available for accepted applicants. If the number isn't right for where you are today, we'll point you at The Club instead, which is a lower-entry community.</p></div>
+</div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>How long is the commitment?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>Membership runs in annual cycles. We build for the long arc, not the quick win. Most members renew at the end of year one because the second year compounds on the first.</p></div>
+</div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>What happens on the qualification call?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>We walk through your current revenue, your operating model, your goals, and what's genuinely in the way. If the Mastermind is the right room, we talk logistics and get you enrolled. If it isn't, we'll tell you honestly and point you at the right resource instead.</p></div>
+</div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>How is this different from other high-ticket masterminds?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>Hello Seven is built specifically for women, BIPOC, and LGBTQIA+ founders who are often underpriced, under-supported, and over-delivering. The room reflects that. The architecture addresses it. The mission is built into every decision we make about who we let in and what we teach.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section style="text-align:center">
+<div class="container">
+<h2 class="reveal">The Room Is Open</h2>
+<p class="reveal" style="margin:20px auto 40px">Applications are reviewed within 48 hours. If you're a fit, the qualification call gets booked.</p>
+<a href="#apply" class="cta-primary reveal">Apply Now →</a>
+</div>
+</section>
+
+<footer class="footer">
+<div class="container">
+<p>© 2026 Hello Seven. All rights reserved.</p>
+</div>
+</footer>
+
+<script>
+const obs=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('in')),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(e=>obs.observe(e));
+</script>
+</body>
+</html>
